@@ -1,4 +1,5 @@
 {{ with .Site.Param "copyNotice" }}
+<hr id="footer-separator">
 <p>Copyright &copy;
   {{- if compare.Eq .BaseYear now.Year }} 2026 {{ else }} {{ .BaseYear }}&ndash;{{ now.Year }} {{ end }}
   {{- .Author }}. {{ .NoticeText }}

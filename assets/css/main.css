@@ -1,15 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "components/header.css";
 @import "components/footer.css";
 
+:root {
+    --primary:                  #a50034;
+    --secondary:                #f7c6c7;
+    --foreground:               #000000;
+    --background:               #ffffff;
+    --backdrop:                 #d9d9d9;
+    --border-radius:            5px;
+    --width:                    80ch;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+
 body {
-  color: #222;
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+    font-family: Inter, sans-serif;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: min-content auto;
+    justify-items: center;
+    align-items: start;
+    color: var(--foreground);
+    background: var(--backdrop);
+}
+
+main, header, footer {
+    max-width: var(--width);
+    width: 80%;
+}
+
+#main-block {
+    width: 100%;
+    height: 100%;
+    background: var(--backdrop);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+main {
+    background: var(--background);
+    flex-grow: 1;
+    margin: 1rem 1rem 0rem 1rem;
+    padding: 0rem 1.5rem 1rem 1.5rem;
+    box-sizing: border-box;
+    border-radius: 5px 5px 0px 0px;
+}
+
+h1, h2, h3 {
+    color: var(--primary);
 }
 
 a {
-  color: #00e;
-  text-decoration: none;
+    color: var(--primary);
 }

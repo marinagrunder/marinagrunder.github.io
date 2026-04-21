@@ -4,9 +4,11 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
+  <div id="header-block">
+    <header>
+      {{ partial "header.html" . }}
+    </header>
+  </div>
   <div id="main-block">
     <main>
       {{ block "main" . }}{{ end }}
