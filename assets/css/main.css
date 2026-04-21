@@ -63,4 +63,9 @@ h1, h2, h3 {
 
 a {
     color: var(--secondary);
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--primary);
 }
