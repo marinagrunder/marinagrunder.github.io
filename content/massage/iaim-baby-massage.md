@@ -1,8 +1,8 @@
 +++
 date = '2026-04-21T18:49:23+02:00'
-title = 'IAIM Baby Massage'
-description = 'ADD DESCRIPTION!'
+title = 'IAIM Baby-Massage'
+description = 'So Massage. Mit Babys!'
 draft = true
 +++
 
-This is the baby massage page.
+Hier kommt dann das Baby-Massage-Zeug hin.

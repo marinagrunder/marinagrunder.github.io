@@ -1,7 +1,7 @@
 +++
 date = '2026-04-21T18:46:04+02:00'
 title = 'Musik'
-description = 'ADD DESCRIPTION!'
+description = 'Eine schöne Beschreiung!'
 draft = true
 
 [menus]
@@ -9,4 +9,4 @@ draft = true
         weight = 10
 +++
 
-This is the musik section page.
+Meine Musik-Angebote sind die folgenden:
