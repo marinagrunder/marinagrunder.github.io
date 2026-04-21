@@ -1,5 +1,5 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<meta name="description" content="{{- if .Description }}{{ .Description }}{{- else }}{{ .Content | truncate 150 }}{{- end }}" />
 {{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}

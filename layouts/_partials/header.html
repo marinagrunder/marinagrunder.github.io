@@ -1,2 +1,10 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<h1>LGO</h1>
+<nav>
+  {{- $currentPage := . }}
+  {{- range .Site.Menus.main.ByWeight }}
+  <a class="menu-entry{{ if $currentPage.IsMenuCurrent .Menu . }} menu-current{{ end }}" href="{{ .URL }}">
+    {{- .Name -}}
+  </a>
+  {{- else }}
+  {{- end }}
+</nav>

@@ -1,1 +1,6 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+{{ with .Site.Param "copyNotice" }}
+<p>Copyright &copy;
+  {{- if compare.Eq .BaseYear now.Year }} 2026 {{ else }} {{ .BaseYear }}&ndash;{{ now.Year }} {{ end }}
+  {{- .Author }}. {{ .NoticeText }}
+</p>
+{{ end }}
