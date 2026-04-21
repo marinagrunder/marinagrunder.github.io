@@ -1,0 +1,11 @@
+baseURL = 'https://marinagrunder.github.io/'
+locale = 'de-CH'
+title = 'Marina Grunder'
+defaultContentLanguage = 'de'
+disableKinds = [ 'taxonomy', 'term' ]
+
+[params]
+    [params.copyNotice]
+        baseYear = 2026
+        name = 'Marina Grunder'
+        noticeText = 'All work is licensed under CC BY-SA 4.0, unless stated otherwise.'
