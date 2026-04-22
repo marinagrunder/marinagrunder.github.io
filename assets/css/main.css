@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "components/header.css";
 @import "components/footer.css";
-
-:root {
-    --primary:                  #a50034;
-    --secondary:                #f7c6c7;
-    --foreground:               #000000;
-    --background:               #ffffff;
-    --backdrop:                 #d9d9d9;
-    --border-radius:            5px;
-    --width:                    80ch;
-}
+@import "components/variables.css";
 
 html, body {
     margin: 0;
