@@ -2,6 +2,7 @@
 @import "components/header.css";
 @import "components/footer.css";
 @import "components/variables.css";
+@import "components/mobile.css";
 
 html, body {
     margin: 0;
@@ -23,8 +24,7 @@ body {
 }
 
 main, header, footer {
-    max-width: var(--width);
-    width: 80%;
+    width: min(var(--width), 100%);
 }
 
 #main-block {
@@ -37,12 +37,12 @@ main, header, footer {
     justify-content: space-between;
     box-sizing: border-box;
     overflow-y: auto;
+    padding: 1rem;
 }
 
 main {
     background: var(--background);
     flex-grow: 1;
-    margin: 1rem 1rem 0rem 1rem;
     padding: 0rem 1.5rem 1rem 1.5rem;
     box-sizing: border-box;
     border-radius: var(--border-radius) var(--border-radius) 0px 0px;
