@@ -69,3 +69,9 @@ a:hover {
 dt {
     margin-top: 1rem;
 }
+
+main p {
+    text-align: justify;
+    hyphens: auto;
+    line-height: 1.62;
+}
