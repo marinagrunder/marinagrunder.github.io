@@ -65,3 +65,7 @@ a {
 a:hover {
     color: var(--primary);
 }
+
+dt {
+    margin-top: 1rem;
+}
