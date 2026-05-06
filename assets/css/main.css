@@ -52,6 +52,11 @@ h1, h2, h3 {
     color: var(--primary);
 }
 
+h2 {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--foreground);
+}
+
 a {
     color: var(--secondary);
     transition: color 0.3s;
