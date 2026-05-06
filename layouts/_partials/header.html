@@ -4,7 +4,7 @@
 <nav>
   {{- $currentPage := . }}
   {{- range .Site.Menus.main.ByWeight }}
-  <a class="menu-entry{{ if $currentPage.IsMenuCurrent .Menu . }} menu-current{{ end }}" href="{{ .URL }}">
+  <a class="menu-entry{{ if or (and (.Page.IsAncestor $currentPage) (not .Page.IsHome)) ($currentPage.IsMenuCurrent .Menu .) }} menu-current{{ end }}" href="{{ .URL }}">
     {{- .Name -}}
   </a>
   {{- else }}
