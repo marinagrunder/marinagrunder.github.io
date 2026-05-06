@@ -1,6 +1,6 @@
-# magruf.github.io
+# marinagrunder.github.io
 
-This is where the code and content for the magruf.github.io lives.
+This is where the code and content for marinagrunder.github.io lives.
 
 ## Note on Licensing
 
