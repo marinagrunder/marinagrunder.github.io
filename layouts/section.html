@@ -1,10 +1,12 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
   {{ .Content }}
+<section>
+  <dl class="page-list">
   {{ range .Pages }}
-    <section>
-      <h2 class="summary-title" ><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Description }}
-    </section>
+      <dt class="page-list-title"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></dt>
+      <dd>{{ .Description }}</dd>
   {{ end }}
+</section>
+  </dl>
 {{ end }}
