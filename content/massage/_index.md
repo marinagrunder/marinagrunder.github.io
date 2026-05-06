@@ -2,7 +2,6 @@
 date = '2026-04-21T18:44:24+02:00'
 title = 'Massage'
 description = 'Eine schöne Beschreiung!'
-draft = true
 
 [menus]
     [menus.main]
