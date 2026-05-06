@@ -3,6 +3,7 @@ locale = 'de-CH'
 title = 'Marina Grunder'
 defaultContentLanguage = 'de'
 disableKinds = [ 'taxonomy', 'term' ]
+enableGitInfo = true
 
 [params]
     [params.copyNotice]
